@@ -1,0 +1,20 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/ceres/internal/integer_sequence_algorithm.h
+utility
+-
+
+/home/lenovo/catkin_ws_debug2/src/RTK-Visual-Inertial-Navigation/ceres-solver-modified/internal/ceres/integer_sequence_algorithm_test.cc
+ceres/internal/integer_sequence_algorithm.h
+/home/lenovo/catkin_ws_debug2/src/RTK-Visual-Inertial-Navigation/ceres-solver-modified/internal/ceres/ceres/internal/integer_sequence_algorithm.h
+type_traits
+-
+utility
+-
+

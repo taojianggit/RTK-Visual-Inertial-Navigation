@@ -1,0 +1,38 @@
+Determining if the function sgemm_ exists failed with the following output:
+Change Dir: /home/lenovo/catkin_ws_debug2/src/RTK-Visual-Inertial-Navigation/ceres-solver-modified/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_70693/fast && /usr/bin/gmake -f CMakeFiles/cmTC_70693.dir/build.make CMakeFiles/cmTC_70693.dir/build
+gmake[1]: 进入目录“/home/lenovo/catkin_ws_debug2/src/RTK-Visual-Inertial-Navigation/ceres-solver-modified/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_70693.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=sgemm_   -o CMakeFiles/cmTC_70693.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_70693
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_70693.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=sgemm_    CMakeFiles/cmTC_70693.dir/CheckFunctionExists.c.o  -o cmTC_70693 
+/usr/bin/ld: CMakeFiles/cmTC_70693.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `sgemm_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_70693.dir/build.make:87：cmTC_70693] 错误 1
+gmake[1]: 离开目录“/home/lenovo/catkin_ws_debug2/src/RTK-Visual-Inertial-Navigation/ceres-solver-modified/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:121：cmTC_70693/fast] 错误 2
+
+
+
+Determining if the function cheev_ exists failed with the following output:
+Change Dir: /home/lenovo/catkin_ws_debug2/src/RTK-Visual-Inertial-Navigation/ceres-solver-modified/build/CMakeFiles/CMakeTmp
+
+Run Build Command(s):/usr/bin/gmake cmTC_845b8/fast && /usr/bin/gmake -f CMakeFiles/cmTC_845b8.dir/build.make CMakeFiles/cmTC_845b8.dir/build
+gmake[1]: 进入目录“/home/lenovo/catkin_ws_debug2/src/RTK-Visual-Inertial-Navigation/ceres-solver-modified/build/CMakeFiles/CMakeTmp”
+Building C object CMakeFiles/cmTC_845b8.dir/CheckFunctionExists.c.o
+/usr/bin/cc   -DCHECK_FUNCTION_EXISTS=cheev_   -o CMakeFiles/cmTC_845b8.dir/CheckFunctionExists.c.o   -c /usr/share/cmake-3.16/Modules/CheckFunctionExists.c
+Linking C executable cmTC_845b8
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_845b8.dir/link.txt --verbose=1
+/usr/bin/cc  -DCHECK_FUNCTION_EXISTS=cheev_    CMakeFiles/cmTC_845b8.dir/CheckFunctionExists.c.o  -o cmTC_845b8  /usr/lib/x86_64-linux-gnu/libblas.so 
+/usr/bin/ld: CMakeFiles/cmTC_845b8.dir/CheckFunctionExists.c.o: in function `main':
+CheckFunctionExists.c:(.text+0x14): undefined reference to `cheev_'
+collect2: error: ld returned 1 exit status
+gmake[1]: *** [CMakeFiles/cmTC_845b8.dir/build.make:88：cmTC_845b8] 错误 1
+gmake[1]: 离开目录“/home/lenovo/catkin_ws_debug2/src/RTK-Visual-Inertial-Navigation/ceres-solver-modified/build/CMakeFiles/CMakeTmp”
+gmake: *** [Makefile:121：cmTC_845b8/fast] 错误 2
+
+
+
