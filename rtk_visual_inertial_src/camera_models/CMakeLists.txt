@@ -4,6 +4,8 @@ project(camera_models)
 set(CMAKE_BUILD_TYPE "Release")
 set(CMAKE_CXX_FLAGS "-std=c++14")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3 -fPIC")
+
+
 # set(cv_bridge_DIR /usr/local/share/cv_bridge/cmake) 
 find_package(catkin REQUIRED COMPONENTS
     roscpp
@@ -13,7 +15,7 @@ find_package(catkin REQUIRED COMPONENTS
 find_package(Boost REQUIRED COMPONENTS filesystem program_options system)
 include_directories(${Boost_INCLUDE_DIRS})
 
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV 4 REQUIRED)
 # include(/home/huang/A/opencv-3.2/build/OpenCVConfig.cmake)
 # message(WARNING "OpenCV_VERSION: ${OpenCV_VERSION}")
 # set(EIGEN_INCLUDE_DIR "/usr/local/include/eigen3")

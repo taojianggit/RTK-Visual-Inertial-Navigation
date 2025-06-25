@@ -18,7 +18,7 @@ find_package(catkin REQUIRED COMPONENTS
     rosbag)
     
     
-find_package(OpenCV 3 REQUIRED)
+find_package(OpenCV 4 REQUIRED)
 include(../../ceres-solver-modified/build/lib/cmake/Ceres/CeresConfig.cmake)
 find_package(Eigen3)
 

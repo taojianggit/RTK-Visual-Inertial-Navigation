@@ -383,7 +383,7 @@ void FeatureTracker::drawTrack(const cv::Mat& imLeft, const cv::Mat& imRight,
         cv::hconcat(imLeft, imRight, imTrack);
     else
         imTrack = imLeft.clone();
-    cv::cvtColor(imTrack, imTrack, CV_GRAY2RGB);
+    cv::cvtColor(imTrack, imTrack, cv::COLOR_GRAY2BGR);
 
     for (size_t j = 0; j < curLeftPts.size(); j++) {
         double len = std::min(1.0, 1.0 * track_cnt[j] / 20);
