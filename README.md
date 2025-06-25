@@ -20,8 +20,8 @@ This package requires some features of C++11.
 ### 1.2 ROS
 This package is developed under [ROS Kinetic](http://wiki.ros.org/kinetic) environment.
 
-### 1.3 Opencv 3
-Our code uses [Opencv 3](https://github.com/opencv/opencv/tree/3.4) for image process.
+### 1.3 Opencv 4
+Our code uses [Opencv 4](https://github.com/opencv/opencv/tree/4) for image process.
 
 ## 2. Build RTK-Visual-Inertial-Navigation
 Clone the repository to your catkin workspace (for example `~/catkin_ws/`):
