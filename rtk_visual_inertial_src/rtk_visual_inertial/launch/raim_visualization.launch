@@ -1,0 +1,25 @@
+<!-- RAIM Visualization Launch File -->
+<launch>
+    <!-- Launch RViz with RAIM configuration -->
+    <node name="rviz_raim" pkg="rviz" type="rviz" output="screen" 
+          args="-d $(find rtk_visual_inertial)/config/raim_rviz_config.rviz" />
+    
+    <!-- Optional: Launch rqt_plot for real-time plotting of RAIM metrics -->
+    <!-- Uncomment the line below if you want to automatically start rqt_plot -->
+    <!-- <node name="rqt_plot_raim" pkg="rqt_plot" type="rqt_plot" output="screen"
+          args="/raim/protection_levels/data[0] /raim/protection_levels/data[1]" /> -->
+    
+    <!-- Optional: Launch diagnostic aggregator for RAIM status monitoring -->
+    <node name="diagnostic_aggregator" pkg="diagnostic_aggregator" type="aggregator_node" output="screen">
+        <rosparam>
+            pub_rate: 1.0
+            base_path: ''
+            analyzers:
+              raim_monitor:
+                type: diagnostic_aggregator/GenericAnalyzer
+                path: RAIM_Monitor
+                contains: RAIM
+                timeout: 5.0
+        </rosparam>
+    </node>
+</launch>

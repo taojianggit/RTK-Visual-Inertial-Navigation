@@ -1,0 +1,21 @@
+# Exclude large evaluation data files
+evaluate/*.csv
+evaluate/**/*.csv
+*.csv
+
+# Build directories
+build/
+devel/
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Log files
+*.log
+
+# Backup files
+*~
+*.backup
